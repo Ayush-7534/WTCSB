@@ -7,25 +7,42 @@
 // }
 // aa();
 
-function person() {
-    this.age = 25;
+// function person() {
+//     this.age = 25;
 
-    setTimeout(function( ){
-        console.log(this.age);
-    }, 1000);
-}
+//     setTimeout(function( ){
+//         console.log(this.age);
+//     }, 1000);
+// }
 
-person();
+// person();
 
-function Person() {
-    this.age = 25;
+// function Person() {
+//     this.age = 25;
 
-    setTimeout(() => {
-        console.log(this.age);
-    }, 1000);
-}
-
-
+//     setTimeout(() => {
+//         console.log(this.age);
+//     }, 1000);
+// }
 
 
-Person();
+// Person();
+
+// const aa = () => { return { user : name }};
+// console.log(aa());
+
+// const bb = ()=> [1 ,2 ,3 ,4 ,5 ,6];
+// console.log(bb());
+
+const user = {
+    name : "adj" , age: 22,
+    welcome : function(){
+        console.log(`hello ${this.name}`);
+        console.log(this);
+    }
+};
+
+const f = user.welcome();
+console.log(f);
+// user.name = "ajay";
+// user.welcome();
