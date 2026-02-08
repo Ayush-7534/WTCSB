@@ -18,3 +18,6 @@
 let colours = ["red" , "green", "blue"];
 let [,secondcolour] = colours;
 console.log(secondcolour);
+
+let[,,thirdcolour] = colours;
+console.log(thirdcolour);
