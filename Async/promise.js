@@ -1,5 +1,5 @@
 function roll(num, delay) {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve,reject) => {
     setTimeout(() => {
       console.log("Roll. no. is " + num);
       resolve(num); // pass value to next step

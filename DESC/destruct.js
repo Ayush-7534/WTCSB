@@ -6,7 +6,7 @@
 
 // let data = [1,2]
 // let [a = 10 , b = 20] = data;
-// console.log(a);
+// console.log(a);   //give default value 1 only , it will give 10 if 1 is not there ex[,2]
 // console.log(b);
 
 // let p = 5; 
@@ -17,7 +17,10 @@
 
 let colours = ["red" , "green", "blue"];
 let [,secondcolour] = colours;
-console.log(secondcolour);
+console.log(secondcolour);  // output green
 
 let[,,thirdcolour] = colours;
-console.log(thirdcolour);
+console.log(thirdcolour);  // output blue
+
+let[first,,] = colours;
+console.log(first);   // output red
